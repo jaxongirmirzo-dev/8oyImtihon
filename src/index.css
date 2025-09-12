@@ -1,0 +1,78 @@
+@import "../src/css/button.css";
+@import "../src/css/fonts.css";
+@import "../src/css/variables.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  height: 100%;
+  font-size: var(--fs-preset-6);
+  line-height: var(--lh-preset-9);
+  background-color: var(--color-neutral-100);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito Sans";
+}
+
+.container {
+  width: 100%;
+  max-width: 1660px;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.hero__list__item__icon img {
+  margin-bottom: 24px;
+  background-color: white;
+  padding: 1.394rem 1.84rem;
+  border-radius: 1.2rem;
+}
+
+.hero__list__item__icon {
+  width: 100%;
+  max-width: 376px;
+  color: var(--color-neutral-900);
+}
+
+.hero__list__item__icon h4 {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero__list__item__icon p {
+  font-size: 2rem;
+}
