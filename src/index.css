@@ -55,8 +55,14 @@ body {
   margin-bottom: 26px;
 }
 
+.hero__container {
+  background-image: url(../public/images/pattern-squiggle-1.svg);
+  background-position: bottom 10rem right 2rem;
+  background-repeat: no-repeat;
+}
+
 .hero__list__item__icon img {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   background-color: white;
   padding: 1.394rem 1.84rem;
   border-radius: 1.2rem;
@@ -64,7 +70,7 @@ body {
 
 .hero__list__item__icon {
   width: 100%;
-  max-width: 376px;
+  max-width: 37.6rem;
   color: var(--color-neutral-900);
 }
 
@@ -75,4 +81,11 @@ body {
 
 .hero__list__item__icon p {
   font-size: 2rem;
+}
+
+.pre__footer {
+  background-image: url(../public/images/pattern-fork.svg),
+    url(../public/images/pattern-knife.svg);
+  background-repeat: no-repeat;
+  background-position: left -7.3rem top 2.3rem, right -7.3rem top 2.4rem;
 }

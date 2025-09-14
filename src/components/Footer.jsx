@@ -14,9 +14,9 @@ function Footer() {
         </p>
       </div>
       <div style={{ display: "flex", gap: "24px" }}>
-        <img src="./public/images/icon-instagram.svg" alt="" />
-        <img src="./public/images/icon-bluesky.svg" alt="" />
-        <img src="./public/images/icon-tiktok.svg" alt="" />
+        <img  src="./public/images/icon-instagram.svg" alt="" />
+        <img  src="./public/images/icon-bluesky.svg" alt="" />
+        <img  src="./public/images/icon-tiktok.svg" alt="" />
       </div>
     </div>
   );

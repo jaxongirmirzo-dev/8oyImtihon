@@ -12,7 +12,7 @@ function Header() {
           paddingBottom: "32.5px",
         }}
       >
-        <img src="./public/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" alt="" />
         <ul
           style={{
             display: "flex",
@@ -42,7 +42,7 @@ function Header() {
             style={{ fontSize: "18px", color: "#163A34" }}
           >
             <NavLink
-              to={"./about"}
+              to={"/about"}
               style={({ isActive }) => ({
                 borderBottom: isActive ? "3px solid #ff9966" : "none",
                 paddingBottom: "5px",
@@ -58,13 +58,14 @@ function Header() {
             style={{ fontSize: "18px", color: "#163A34" }}
           >
             <NavLink
-              to={"./recipe"}
+              to={"/recipes"}
               style={({ isActive }) => ({
                 borderBottom: isActive ? "3px solid #ff9966" : "none",
                 paddingBottom: "5px",
                 color: "#123c36",
                 textDecoration: "none",
               })}
+              
             >
               Recipes
             </NavLink>

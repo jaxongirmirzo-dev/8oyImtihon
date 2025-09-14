@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import RealLife from "../components/RealLife";
+import PreFooter from "../components/PreFooter";
 
 const allProductsQuery = (queryParams) => {
   const { search, category, company, sort, price, shipping, page } =
@@ -59,7 +60,7 @@ function Home() {
       <Features />
 
       <RealLife />
-
+      <PreFooter />
       <Footer />
     </>
   );

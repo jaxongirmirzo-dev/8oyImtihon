@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <>
+    <div className="hero__container container">
       <div
         className="container"
         style={{
@@ -87,7 +87,7 @@ function Hero() {
           />
         </picture>
       </div>
-    </>
+    </div>
   );
 }
 
