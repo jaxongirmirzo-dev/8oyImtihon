@@ -66,22 +66,22 @@ function Hero() {
         <picture>
           <source
             media="(min-width: 1100px)"
-            srcSet="./public/images/image-home-hero-large.webp"
+            srcSet="/images/image-home-hero-large.webp"
             width={"1192px"}
           />
 
           <source
             media="(min-width: 700px)"
-            srcSet="./public/images/image-home-hero-small.webp"
+            srcSet="/images/image-home-hero-small.webp"
           />
 
           <source
             media="(min-width: 340px)"
-            srcSet="./public/images/image-home-hero-small.webp"
+            srcSet="/images/image-home-hero-small.webp"
           />
 
           <img
-            src="../public/images/image-home-hero-small.webp"
+            src="/images/image-home-hero-small.webp"
             alt="Hero image"
             style={{ borderRadius: "12px", border: "12px solid white" }}
           />

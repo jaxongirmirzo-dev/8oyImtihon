@@ -48,7 +48,7 @@ function RealLife() {
             style={{
               borderRadius: "16px",
             }}
-            src="./public/images/image-home-real-life-small.webp"
+            src="/images/image-home-real-life-small.webp"
             alt=""
             width={635}
           />

@@ -26,17 +26,17 @@ function Features() {
         }}
       >
         <li className="hero__list__item__icon">
-          <img src="./public/images/icon-whole-food-recipes.svg" alt="" />
+          <img src="/images/icon-whole-food-recipes.svg" alt="" />
           <h4>Whole-food recipes</h4>
           <p>Each dish uses everyday, unprocessed ingredients.</p>
         </li>
         <li className="hero__list__item__icon">
-          <img src="./public/images/icon-minimum-fuss.svg" alt="" />
+          <img src="/images/icon-minimum-fuss.svg" alt="" />
           <h4>Minimum fuss</h4>
           <p>All recipes are designed to make eating healthy quick and easy.</p>
         </li>
         <li className="hero__list__item__icon">
-          <img src="./public/images/icon-search-in-seconds.svg" alt="" />
+          <img src="/images/icon-search-in-seconds.svg" alt="" />
           <h4>Search in seconds</h4>
           <p>
             Filter by name or ingredient and jump straight to the recipe you
