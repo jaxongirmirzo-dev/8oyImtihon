@@ -13,7 +13,7 @@ function Header() {
         }}
       >
         <img src="/images/logo.svg" alt="" />
-        <ul
+        <ul className="navbar"
           style={{
             display: "flex",
             gap: "40px",
