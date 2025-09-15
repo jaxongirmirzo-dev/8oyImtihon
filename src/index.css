@@ -90,13 +90,13 @@ body {
   background-position: left -7.3rem top 2.3rem, right -7.3rem top 2.4rem;
 }
 
+.navbar__items {
+  color: #163a34;
+  font-size: 1.8rem;
+}
+
 .navbar a.active {
   text-decoration: none;
   border-bottom: 0.3rem solid #ff9966;
   color: #123c36;
-}
-
-.navbar__items {
-  color: #163a34;
-  font-size: 1.8rem;
 }
