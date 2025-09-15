@@ -46,13 +46,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1660px;
-  padding-right: 60px;
-  padding-left: 60px;
+  max-width: 166rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  margin-top: 2.6rem;
+  margin-bottom: 2.6rem;
 }
 
 .hero__container {
@@ -92,6 +92,11 @@ body {
 
 .navbar a.active {
   text-decoration: none;
-  border-bottom: 3px solid #ff9966;
+  border-bottom: 0.3rem solid #ff9966;
   color: #123c36;
+}
+
+.navbar__items {
+  color: #163a34;
+  font-size: 1.8rem;
 }

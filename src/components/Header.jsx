@@ -13,7 +13,8 @@ function Header() {
         }}
       >
         <img src="/images/logo.svg" alt="" />
-        <ul className="navbar"
+        <ul
+          className="navbar"
           style={{
             display: "flex",
             gap: "40px",
@@ -21,54 +22,14 @@ function Header() {
             paddingLeft: "279.5px",
           }}
         >
-          <li
-            className="navbar__items"
-            style={{ fontSize: "18px", color: "#163A34" }}
-          >
-            <NavLink
-              to={"/"}
-              style={({ isActive }) => ({
-                borderBottom: isActive ? "3px solid #ff9966" : "none",
-                paddingBottom: "5px",
-                color: "#123c36",
-                textDecoration: "none",
-              })}
-            >
-              Home
-            </NavLink>
+          <li className="navbar__items">
+            <NavLink to={"/"}>Home</NavLink>
           </li>
-          <li
-            className="navbar__items"
-            style={{ fontSize: "18px", color: "#163A34" }}
-          >
-            <NavLink
-              to={"/about"}
-              style={({ isActive }) => ({
-                borderBottom: isActive ? "3px solid #ff9966" : "none",
-                paddingBottom: "5px",
-                color: "#123c36",
-                textDecoration: "none",
-              })}
-            >
-              About
-            </NavLink>
+          <li className="navbar__items">
+            <NavLink to={"/about"}>About</NavLink>
           </li>
-          <li
-            className="navbar__items"
-            style={{ fontSize: "18px", color: "#163A34" }}
-          >
-            <NavLink
-              to={"/recipes"}
-              style={({ isActive }) => ({
-                borderBottom: isActive ? "3px solid #ff9966" : "none",
-                paddingBottom: "5px",
-                color: "#123c36",
-                textDecoration: "none",
-              })}
-              
-            >
-              Recipes
-            </NavLink>
+          <li className="navbar__items">
+            <NavLink to={"/recipes"}>Recipes</NavLink>
           </li>
         </ul>
 
