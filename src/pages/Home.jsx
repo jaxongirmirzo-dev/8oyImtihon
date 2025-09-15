@@ -53,15 +53,12 @@ function Home() {
         <button>Click</button>
       </Form> */}
 
-      <Header />
-
       <Hero />
 
       <Features />
 
       <RealLife />
       <PreFooter />
-      <Footer />
     </>
   );
 }
