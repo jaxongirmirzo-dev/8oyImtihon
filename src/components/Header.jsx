@@ -34,7 +34,7 @@ function Header() {
         </ul>
 
         <button
-          className="btn"
+          className="btn header__btn"
           style={{
             paddingRight: "16px",
             paddingLeft: "16px",

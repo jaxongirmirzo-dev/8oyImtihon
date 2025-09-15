@@ -100,3 +100,14 @@ body {
   border-bottom: 0.3rem solid #ff9966;
   color: #123c36;
 }
+
+/* HOME RESPONSIVE START */
+@media (max-width: 70.6rem) {
+  .navbar,
+  .header__btn {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+} /* HOME RESPONSIVE END */

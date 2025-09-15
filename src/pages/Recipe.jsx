@@ -1,7 +1,11 @@
-import Header from "../components/Header";
+import PreFooter from "../components/PreFooter";
 
 function Recipe() {
-  return <></>;
+  return (
+    <>
+      <PreFooter />
+    </>
+  );
 }
 
 export default Recipe;

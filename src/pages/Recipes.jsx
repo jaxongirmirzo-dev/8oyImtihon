@@ -1,7 +1,9 @@
+import PreFooter from "../components/PreFooter";
+
 function Recipes() {
   return (
     <>
-      <h1>recipes</h1>
+      <PreFooter />
     </>
   );
 }
