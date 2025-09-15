@@ -1,7 +1,9 @@
-import Header from "../components/Header";
-
 function Recipes() {
-  return <></>;
+  return (
+    <>
+      <h1>recipes</h1>
+    </>
+  );
 }
 
 export default Recipes;
