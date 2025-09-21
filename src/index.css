@@ -2,6 +2,7 @@
 @import "../src/css/fonts.css";
 @import "../src/css/variables.css";
 
+/* GLOBAL STYLE START */
 *,
 *::after,
 *::before {
@@ -43,7 +44,6 @@ body {
   flex-direction: column;
   font-family: "Nunito Sans";
 }
-
 .container {
   width: 100%;
   max-width: 166rem;
@@ -55,51 +55,7 @@ body {
   margin-bottom: 2.6rem;
 }
 
-.hero__container {
-  background-image: url(../public/images/pattern-squiggle-1.svg);
-  background-position: bottom 10rem right 2rem;
-  background-repeat: no-repeat;
-}
-
-.hero__list__item__icon img {
-  margin-bottom: 2.4rem;
-  background-color: white;
-  padding: 1.394rem 1.84rem;
-  border-radius: 1.2rem;
-}
-
-.hero__list__item__icon {
-  width: 100%;
-  max-width: 37.6rem;
-  color: var(--color-neutral-900);
-}
-
-.hero__list__item__icon h4 {
-  font-size: 3.2rem;
-  margin-bottom: 1.2rem;
-}
-
-.hero__list__item__icon p {
-  font-size: 2rem;
-}
-
-.pre__footer {
-  background-image: url(../public/images/pattern-fork.svg),
-    url(../public/images/pattern-knife.svg);
-  background-repeat: no-repeat;
-  background-position: left -7.3rem top 2.3rem, right -7.3rem top 2.4rem;
-}
-
-.navbar__items {
-  color: #163a34;
-  font-size: 1.8rem;
-}
-
-.navbar a.active {
-  text-decoration: none;
-  border-bottom: 0.3rem solid #ff9966;
-  color: #123c36;
-}
+/* GLOBAL STYLE END */
 
 /* HOME RESPONSIVE START */
 @media (max-width: 70.6rem) {
@@ -110,4 +66,489 @@ body {
   .burger {
     display: block;
   }
-} /* HOME RESPONSIVE END */
+
+  .real__life__container {
+    flex-direction: column;
+  }
+}
+/* HOME RESPONSIVE END */
+
+/* HEADER START */
+
+.navbar a.active {
+  text-decoration: none;
+  border-bottom: 0.3rem solid var(--color-orange-400);
+  color: var(--color-neutral-800);
+}
+
+header {
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+.header__navbar {
+  padding-bottom: 3.25rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar__items a {
+  color: var(--color-neutral-900);
+  font-size: 1.8rem;
+  padding: 0.5rem 1.2rem;
+  &:hover {
+    transition: 0.3s;
+    border-radius: 0.4rem;
+    background-color: var(--color-neutral-200);
+  }
+}
+
+.header__btn {
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+/* HEADER END */
+
+/* HERO START */
+.hero {
+  display: flex;
+  margin-bottom: 8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  text-align: center;
+  font-size: 7.2rem;
+  margin-top: 8rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-neutral-600);
+}
+
+.hero__title span {
+  background-color: var(--color-orange-300);
+  border-radius: 0.4rem;
+}
+
+.hero__subtitle {
+  text-align: center;
+  color: var(--color-neutral-600);
+  font-size: 2rem;
+  width: 58rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4rem;
+}
+
+.hero__btn {
+  padding: 1.6rem 3.2rem;
+}
+
+.hero-images__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-images__container img {
+  border-radius: 1.2rem;
+  border: 1.2rem solid var(--color-neutral-0);
+}
+
+.hero__container {
+  background-image: url(/images/pattern-squiggle-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* HERO END */
+
+/* FEATURES START */
+
+.features__title {
+  font-size: 4.8rem;
+  margin-top: 9.6rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 4.8rem;
+  color: var(--color-neutral-900);
+}
+
+.features__list {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  border-bottom: 0.1rem solid #e0e6e3;
+  padding-bottom: 9.7rem;
+}
+
+.features__list__item p {
+  font-size: 2rem;
+}
+
+.features__list__item h4 {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.features__list__item {
+  width: 100%;
+  max-width: 37.6rem;
+  color: var(--color-neutral-900);
+}
+
+.features__list__item img {
+  margin-bottom: 2.4rem;
+  background-color: var(--color-neutral-0);
+  padding: 1.394rem 1.84rem;
+  border-radius: 1.2rem;
+}
+/* FEATURES END  */
+
+/* REAL LIFE START */
+.real__life__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  margin-top: 8.55rem;
+  margin-bottom: 9.6rem;
+}
+
+.real__life__info {
+  color: var(--color-neutral-900);
+  width: 50.9rem;
+}
+
+.real__life__info h3 {
+  font-size: 4.8rem;
+}
+
+.real__life__info p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.real__life__info p span {
+  border-radius: 0.5rem;
+  background-color: var(--color-orange-500);
+}
+
+.real__life__image {
+  padding: 0.4rem 1.4rem;
+  margin-right: -9.8rem;
+}
+
+.real__life__image img {
+  border-radius: 1.6rem;
+}
+/* REAL LIFE END */
+
+/* PRE-FOOTER START */
+.pre__footer {
+  background-color: #e9ede8;
+  padding-right: 12.4rem;
+  justify-content: center;
+  background-image: url(/images/pattern-fork.svg),
+    url(/images/pattern-knife.svg);
+  background-repeat: no-repeat;
+  background-position: left -7.3rem top 2.3rem, right -7.3rem top 2.4rem;
+}
+
+.pre__footer h3 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: var(--color-neutral-900);
+  text-align: center;
+  padding-top: 9.6rem;
+  padding-bottom: 1.2rem;
+}
+
+.pre__footer p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-neutral-600);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.pre__footer button {
+  padding: 1.6rem 2.4rem;
+  margin-bottom: 9.6rem;
+  margin-left: 49rem;
+}
+
+/* PRE-FOOTER END */
+
+/* ABOUT/HERO START */
+
+.about__hero__container {
+  /* display: flex;
+  align-items: center;
+  padding-left: 12.4rem;
+  padding-right: 12.4rem; */
+  border-bottom: 0.1rem solid var(--color-neutral-200);
+  /* padding-bottom: 9.7rem;
+  background-image: url(/images/pattern-squiggle-2.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.1rem bottom 12rem; */
+}
+
+.about__hero {
+  display: flex;
+  align-items: center;
+  padding-left: 12.4rem;
+  padding-right: 12.4rem;
+  padding-bottom: 9.7rem;
+  background-image: url(/images/pattern-squiggle-2.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.1rem bottom 12rem;
+}
+
+.about__hero__info {
+  margin-right: 6.4rem;
+}
+
+.about__hero__info small {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-neutral-900);
+  background-color: var(--color-orange-500);
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 2.4rem;
+  border-radius: 0.6rem;
+}
+
+.about__hero__info h1 {
+  color: var(--color-neutral-900);
+  font-weight: 800;
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+  text-align: start;
+}
+
+.about__hero__info p {
+  color: var(--color-neutral-600);
+  font-weight: 500;
+  font-size: 2rem;
+}
+.about__hero__image {
+  z-index: -1;
+}
+.about__hero__image__photo {
+  border-radius: 1.6rem;
+}
+/* ABOUT/HERO END */
+
+/* ABOUT EXISTENCE START */
+.existence__container {
+  padding-right: 6.4rem;
+  padding-left: 6.4rem;
+  border-bottom: 0.1rem solid var(--color-neutral-200);
+}
+
+.existence {
+  display: flex;
+  padding-left: 12.4rem;
+  padding-top: 8.6rem;
+  padding-bottom: 8.6rem;
+  width: 129.2rem;
+}
+
+.existence__left-side {
+  margin-right: 10.5rem;
+}
+
+.existence__right-side {
+  margin-right: -6.5rem;
+  width: 75.2rem;
+}
+
+.philosophy__title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  padding-right: 5rem;
+  color: var(--color-neutral-900);
+}
+
+.existence__title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: var(--color-neutral-900);
+}
+
+.existence__list__item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.existence__list__item h5 {
+  color: var(--color-neutral-900);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.existence__list__item p {
+  color: var(--color-neutral-600);
+  font-size: 2rem;
+  font-weight: 500;
+}
+/* ABOUT EXISTENCE END */
+
+/* ABOUT PLATE START */
+.plate__container {
+  margin-bottom: 9.4rem;
+}
+.plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+}
+
+.plate__info {
+  width: 37.6rem;
+}
+.plate__title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--color-neutral-900);
+  letter-spacing: -0.2rem;
+}
+.plate__description {
+  color: var(--color-neutral-600);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.plate__list {
+  list-style: circle;
+}
+.plate__list__item {
+  color: var(--color-neutral-600);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.plate__photo {
+  margin-right: -7.5rem;
+  width: 74.4rem;
+}
+.about__plate__image__photo {
+  border-radius: 2rem;
+}
+/* ABOUT PLATE END */
+
+/* RECIPES START */
+
+.recipes__list__container {
+  justify-content: center;
+}
+
+.recipe__info__container {
+  padding: 0.8rem;
+}
+
+.recipes__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  padding-left: 8.4rem;
+}
+.recipes__list__item {
+  width: 100%;
+  max-width: 37.6rem;
+  background-color: var(--color-neutral-0);
+  border-radius: 1rem;
+}
+.recipe__image {
+  width: 36rem;
+  border-radius: 1rem;
+  margin-bottom: 1.6rem;
+}
+.recipe__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-neutral-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipe__overview {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  color: var(--color-neutral-600);
+}
+.servings__prepMinutes {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-neutral-900);
+}
+.recipe__servings {
+  display: flex;
+  align-items: center;
+}
+.recipe__prepMinutes {
+  display: flex;
+  align-items: center;
+}
+.recipe__cookMinutes {
+  margin-bottom: 1.6rem;
+}
+
+.recipes__info__numbers {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  gap: 0.6rem;
+  color: var(--color-neutral-900);
+}
+
+.recipes__btn {
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-radius: 99.9rem;
+}
+
+.recipes__title {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  color: var(--color-neutral-900);
+  letter-spacing: -0.2rem;
+}
+
+.recipes__description {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
+  color: var(--color-neutral-800);
+  padding: 0.1rem 2rem;
+}
+
+.recipes__hero {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 72.4rem;
+}
+/* RECIPES END */

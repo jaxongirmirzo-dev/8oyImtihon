@@ -1,67 +1,22 @@
 function Hero() {
   return (
-    <div className="hero__container container">
-      <div
-        className="container"
-        style={{
-          marginBottom: "80px",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: "72px",
-            marginTop: "80px",
-            marginBottom: "12px",
-            color: "#395852",
-          }}
-        >
-          <span
-            style={{
-              backgroundColor: "#fdd9c1",
-              borderRadius: "4px",
-            }}
-          >
-            Healthy
-          </span>
+    <div className="hero__container">
+      <div className="hero container">
+        <h1 className="hero__title">
+          <span>Healthy</span>
           meals, zero fuss
         </h1>
-        <p
-          style={{
-            textAlign: "center",
-            color: "#395852",
-            fontSize: "20px",
-            width: "580px",
-            marginRight: "auto",
-            marginLeft: "auto",
-            marginBottom: "40px",
-          }}
-        >
+        <p className="hero__subtitle">
           Discover eight quick, whole-food recipes that you can cook tonight—no
           processed junk, no guesswork.
         </p>
 
-        <button
-          className="btn"
-          style={{
-            padding: "16px 32px",
-          }}
-        >
-          Start Exploring
-        </button>
+        <button className="btn hero__btn">Start Exploring</button>
       </div>
 
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+        className="hero-images__container"
+       
       >
         <picture>
           <source
@@ -83,7 +38,7 @@ function Hero() {
           <img
             src="/images/image-home-hero-small.webp"
             alt="Hero image"
-            style={{ borderRadius: "12px", border: "12px solid white" }}
+           
           />
         </picture>
       </div>

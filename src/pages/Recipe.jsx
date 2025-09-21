@@ -1,9 +1,10 @@
-import PreFooter from "../components/PreFooter";
-
-function Recipe() {
+function Recipe({ recipe, key }) {
+  console.log(recipe);
   return (
     <>
-      <PreFooter />
+      <li>
+        <h1>{recipe.title}</h1>
+      </li>
     </>
   );
 }
