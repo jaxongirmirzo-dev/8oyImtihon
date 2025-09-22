@@ -14,7 +14,7 @@ export const useFetch = (url) => {
         const req = await fetch(url);
 
         if (!req.ok) {
-          throw new Error("toast");
+          throw new Error("Something went wrong");
         }
         const data = await req.json();
         setData(data);

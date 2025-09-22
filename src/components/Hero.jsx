@@ -14,10 +14,7 @@ function Hero() {
         <button className="btn hero__btn">Start Exploring</button>
       </div>
 
-      <div
-        className="hero-images__container"
-       
-      >
+      <div className="hero-images__container container">
         <picture>
           <source
             media="(min-width: 1100px)"
@@ -35,11 +32,7 @@ function Hero() {
             srcSet="/images/image-home-hero-small.webp"
           />
 
-          <img
-            src="/images/image-home-hero-small.webp"
-            alt="Hero image"
-           
-          />
+          <img src="/images/image-home-hero-small.webp" alt="Hero image" />
         </picture>
       </div>
     </div>
