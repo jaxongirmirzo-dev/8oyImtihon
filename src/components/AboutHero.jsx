@@ -1,8 +1,8 @@
 function AboutHero() {
   return (
     <div className="about__hero__container">
-      <div className="about__hero  container ">
-        <div className="about__hero__info">
+      <div className="about__hero container ">
+        <div className="about__hero__info ">
           <small>Our mission</small>
           <h1>Help more people cook nourishing meals, more often.</h1>
           <p>

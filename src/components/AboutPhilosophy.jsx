@@ -1,12 +1,12 @@
 function AboutPhilosophy() {
   return (
-    <div className="existence__container">
+    <div className="existence__container ">
       <div className="existence container">
         <div className="existence__left-side">
           <h2 className="philosophy__title">Our food philosophy</h2>
         </div>
 
-        <div className="existence__right-side ">
+        <div className="existence__right-side">
           <ul className="existence__list">
             <li className="existence__list__item">
               <div>

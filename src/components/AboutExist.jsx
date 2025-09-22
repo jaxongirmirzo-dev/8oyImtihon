@@ -2,7 +2,6 @@ function AboutExist() {
   return (
     <div className="existence__container">
       <div className="existence container">
-        
         <div className="existence__left-side">
           <h2 className="existence__title">Why we exist</h2>
         </div>

@@ -33,7 +33,8 @@ function Recipe() {
                 {recipe && recipe.overview}
               </p>
               <div className="single-recipe__numbers recipes__info__numbers">
-                <p className="recipe__servings">
+               <div className="single__recipe__numbers__div">
+               <p className="recipe__servings">
                   <img src="/images/icon-servings.svg" alt="" />
                   Servings: {recipe && recipe.servings}
                 </p>
@@ -41,7 +42,9 @@ function Recipe() {
                   <img src="/images/icon-prep-time.svg" alt="" />
                   Prep: {recipe && recipe.prepMinutes} min
                 </p>
-                <p className=" recipes__info__numbers">
+               </div>
+
+                <p className="single__recipe__cookMinutes recipes__info__numbers">
                   <img src="/images/icon-cook-time.svg" alt="" />
                   Cook: {recipe && recipe.cookMinutes} min
                 </p>

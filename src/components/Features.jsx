@@ -1,7 +1,7 @@
 function Features() {
   return (
     <div className="features__container">
-      <div className="features">
+      <div className="features container">
         <h2 className="features__title">What you’ll get</h2>
 
         <ul className="features__list container">
