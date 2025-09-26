@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { Navigate } from "react-router-dom";
 
 export const useFetch = (url) => {
   const [data, setData] = useState(null);
@@ -20,6 +21,7 @@ export const useFetch = (url) => {
         setData(data);
       } catch (error) {
         toast.error(error.message);
+
         setError(error.message);
       } finally {
         setLoading(false);

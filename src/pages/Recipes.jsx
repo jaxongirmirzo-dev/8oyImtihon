@@ -1,12 +1,24 @@
+import { useState } from "react";
 import PreFooter from "../components/PreFooter";
 import { useFetch } from "../hooks/useFetch";
 import Cards from "./Cards";
+import { Navigate } from "react-router-dom";
 
 function Recipes() {
-  const { data, loading, error } = useFetch("http://localhost:3000/recipes");
+  const { data, loading, error } = useFetch(
+    "https://68d69084c2a1754b426b2f17.mockapi.io/recipes/recipes"
+  );
+  const [input, setInput] = useState("");
 
-  if (loading) {
-    return <h1 style={{ textAlign: "center" }}>loading...</h1>;
+  const search = (e) => {
+    setInput(e.target.value);
+    if (loading) {
+      return <h1 style={{ textAlign: "center" }}>loading...</h1>;
+    }
+  };
+
+  if (!data) {
+    return <Navigate to="/notfound" />;
   }
 
   return (
@@ -20,13 +32,31 @@ function Recipes() {
           catch your eye.
         </p>
       </div>
+
+      <form onSubmit={(e) => e.preventDefault()}>
+        <label>
+          <span>Search</span>
+          <input
+            type="search"
+            placeholder="search"
+            name="search"
+            onChange={search}
+            value={input}
+          />
+        </label>
+        <button>submit</button>
+      </form>
+
       <ul className="recipes__list container">
         {data &&
-          data.map((recipe) => {
-            return <Cards recipe={recipe} key={recipe.id} />;
-          })}
+          data
+            .filter((recipe) => {
+              return recipe.title.toLowerCase().includes(input.toLowerCase());
+            })
+            .map((recipe) => {
+              return <Cards recipe={recipe} key={recipe.id} />;
+            })}
       </ul>
-
       <PreFooter />
     </div>
   );
