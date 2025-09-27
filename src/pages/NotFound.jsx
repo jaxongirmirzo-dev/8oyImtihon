@@ -16,7 +16,7 @@ function NotFound() {
         loop
         muted
         playsInline
-        src="../public/videos/404error.mp4"
+        src="/videos/404error.mp4"
         className="background__video"
       ></video>
     </div>
